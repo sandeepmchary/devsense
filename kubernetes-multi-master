@@ -128,6 +128,10 @@ kubectl cluster-info
 kubectl get nodes
 
 some nodes still not ready becoz we didn't deployed kubernetes networking 
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+after this every node is up and running
+
+
 
 
 
